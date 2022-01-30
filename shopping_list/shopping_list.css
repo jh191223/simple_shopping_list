@@ -1,0 +1,101 @@
+*{
+    list-style: none;
+    border:none;
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    background-color: gray;
+}
+
+.container{
+    background-color: gray;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* header 틀 부분 */
+header{    
+    display: flex;
+    justify-content: center;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.category>button{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+.category>button>img{
+    background-color: gray;
+    display: inline-block;
+    width:100%;
+    height: 100%;
+}
+
+.blue{
+    background-color: skyblue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.pink{
+    background-color: pink;
+}
+/* items 고정시키는 부분 */
+
+
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width:100%;
+    overflow-y: scroll;
+}
+
+.content{
+    display:flex;
+    line-height: 100px;
+    width: 350px;
+    height: auto;
+    overflow: auto;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    border-radius:5%;
+    background-color: white;
+
+}
+
+.content>img{
+    padding-top:15px;
+    padding-right:15px;
+    padding-left:10px;
+    width:70px;
+    height: 70px;
+}
+
+.items>.content:first-child {
+    margin-top:160px;
+}
+
+
+/*버튼 기능 */
+
+.content.hidden{
+    display: none;
+}
